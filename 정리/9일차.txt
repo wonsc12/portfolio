@@ -1,0 +1,86 @@
+turnapple123
+
+heroku login
+
+Heroku CLI. 다운로드
+
+cd 한칸띄고 경로설정
+
+git init
+
+heroku git:remote -a turnapple123
+
+git add .
+
+git commit -am "메시지"
+
+git push heroku main
+
+2시10분
+
+cookie, session은 사용자의 아이디/비밀번호 같은 로그인 검증을 하기위한
+텍스트 정보를 저정하는 공간
+서버쪽에서 관리한다 session세션
+클라이언트쪽에서 관리한다.cookie
+
+-로그인 처리를 위한 작업단계
+
+1. node.js 작업폴더에 로그인 인증에 필요한 라이브러리 3종 설치
+
+express-session (서버쪽에 세션관리를 위한 함수들)
+passport ( 로그인 검증을 하기 위한 함수 명령어)
+passport.local
+
+npm install passport passport-local express-session
+
+const passport = require('passport');
+const LocalStrategy = require('passport-local').Strategy;
+const session = require('express-session');
+
+app.use(session({secret : '비밀코드', resave : true, saveUninitialized: false}));
+app.use(passport.initialize());
+app.use(passport.session());
+
+server.js에  require 를 이용해 설치된 라이브러리 불러들이고
+use를 이용해 불러들인 라이브러리 사요하겠음
+
+** 어떤 사람이 로그인을 해주면 일단 그사람의 아이디와 비번이
+
+db에 있는 아이디와 비번이랑 맞는지 검사
+(중간에 로그인검증을 먼저하고)검사결과가 맞으면 세션을 하나 생성해주고
+
+성공페이지(원하는 페이지)        맞지 않으면 실패페이지로 이동
+
+passport.authenticate('local', {failureRedirect : '/fail'})
+
+https://www.passportjs.org/
+
+passport.use(new LocalStrategy({
+  usernameField: 'id',
+  passwordField: 'pw',
+  session: true,
+  passReqToCallback: false,
+}, function (입력한아이디, 입력한비번, done) {
+  //console.log(입력한아이디, 입력한비번);
+  db.collection('login').findOne({ id: 입력한아이디 }, function (에러, 결과) {
+    if (에러) return done(에러)
+
+    if (!결과) return done(null, false, { message: '존재하지않는 아이디요' })
+    if (입력한비번 == 결과.pw) {
+      return done(null, 결과)
+    } else {
+      return done(null, false, { message: '비번틀렸어요' })
+    }
+  })
+}));
+
+
+3시15
+
+기존의 것에 추가하기
+
+로그인이 안되있는 상태면 게시판 페이지들은 접근불가(글목록/글작성/글 수정페이지/디테일)
+
+상단영역은 header.ejs파일로 따로 분리해서(메인/글목록/글작성/글수정/디테일)들어가면 OOO님 로그아웃<--로그인 되어있는 상태 
+
+heroku 호스팅 서버에 업로드

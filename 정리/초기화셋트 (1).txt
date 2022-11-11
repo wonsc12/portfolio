@@ -1,0 +1,26 @@
+ * { margin:0 ;padding:0;}
+        ul,li,ol { list-style:none;}
+        a { text-decoration:none;}
+        img,video { vertical-align:middle;}
+        table {border-collapse:collapse;}
+        input,select,textarea { outline:0;}
+        textarea { resize:none;}
+        body { line-height:1; } 
+
+
+position: fixed; left: 0; top: 50%; transform: translateY(-50%);
+
+웹브라우저 화면으로 세로방향 정가운데
+
+
+vh 화면 전체 다보이게 각각의 화면이 웹브라우저 만큼 꽉 차게
+
+offsetTop; //중간구역 4개의 시작위치값 
+
+// 스크롤바 위치값을 부드럽게 이동시키자!
+                window.scrollTo({
+                    top:scrollMove,   //세로스크롤바이동될위치값,
+                    // left:가로스크롤바이동될위치값, //가로 부분이여서 지금은 안써도 됨
+                    behavior:"smooth"   //스크롤바 위치값 부드럽게 움직이기
+
+                });

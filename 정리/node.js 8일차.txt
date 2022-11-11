@@ -1,0 +1,16 @@
+node.js 8일차 진도내용
+
+- query string이 무엇인지 복습하고 추가내용 배워보기
+  
+- 게시글 검색 기능 구현
+  findOne()의 한계점과  agreegate() 함수 배워보기 (crud에서 read에 해당)
+  mongodb atlas 사이트에서 제공하는 search index 기능 사용해서 검색기능 구현
+
+- select option 태그와 input type="text"를 함께 활용한 게시글 검색 응용
+
+- 조금 이른감이 있지만 작업한 웹사이트 배포 작업 (Heroku 서버 이용)
+  git 사용 필수
+
+- 이번주(오늘까지) 배운내용들로 Heroku 서버에 배포 후 사이트 접속 확인
+  (실습)
+      

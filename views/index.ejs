@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메인페이지</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="/js/header.js"defer></script>
+    <script src="/js/silder.js"defer></script>
+    <script src="/js/text.js"defer></script>
+    <script src="/js/gallery.js"defer></script>
+    <script src="/js/cont5countup.js"defer></script>
+    <script src="/js/cont3text2.js"defer></script>
+    <script src="/js/cont3carousel.js"defer></script>
+    <script src="/js/cont6text.js"defer></script>
+    <script src="/js/cont8text.js"defer></script>
+    <script src="/js/cont9slide.js"defer></script>
+    <script src="/js/footertop.js"defer></script>
+    
+    
+
+</head>
+<body>
+    <%- include("common/header.ejs") %>
+    <div class="container">
+        <div class="cont1">
+            <div class="silder">
+                <div class="view">
+                    <% for(let i=0; i < slide.length; i++){ %>
+                        <div class="turnapple">
+                            <a href="#"><img src="<%- slide[i].spanSrc%>"></a>
+                            <div class="slidetext">
+                                <h2><%- slide[i].title%></h2>
+                                <p><%- slide[i].title2%>
+                                </p>
+                                <div class="boxtwo">
+                                    <div class="getbox tead">
+                                        <a href="#">지금 사러가기</a>
+                                    </div>
+                                    <div class="getbox">
+                                        <a href="#">다른상품보기</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <% } %>
+                <div class="btns">
+                    <div class="prevBtn"><i class="fa-solid fa-angle-left"></i></div>
+                    <div class="nextBtn"><i class="fa-solid fa-angle-right"></i></div>
+                </div>
+                <ul class="circleBtn">
+                    <li class="on"><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="cont2">
+            <div class="text">
+                <h2>인기 BEST</h2>
+                <p>회원 가입 EVENT. 신규 가입 후 바로 사용 가능한 15% 할인 쿠폰 </p>
+            </div>
+            <div class="centerer">
+                <div class="picc">
+                    <img src="/img/fo6.jpg">
+                </div>
+                <div class="textWrap2">
+                    <!-- text23 3개 채워줌-->
+                </div>
+            <!-- <div class="text23">
+                <div class="src22">
+                    <img src=${element.spanSrc}>
+                </div>
+                <div class="text32">
+                    <h2>${element.title}</h2>
+                    <p>${element.title2}</p>
+                </div>
+            </div>-->
+            </div>
+        </div>
+        <div class="cont333">
+            <div class="text">
+                <h2>무지 모자</h2>
+                <p>야구모자,비니,귀달이 모자,버킷햇 ,몃볼캣</p>
+            </div>
+            <div class="center44">
+                <div class="ca_wrap">
+                    <div class="ca_move">
+                        <!-- <div class="ca_child">
+                            <div class="image">
+                                <img src=${element.spanSrc}>
+                            </div>
+                            <div class="bgimage">
+                                <span class="ford">FOR RENT</span>
+                            </div>
+                            <div class="textt">
+                                <h2>${element.title}</h2>
+                                <p><span><i class="fa-solid fa-location-dot"></i></span>123 Kathal st.Tampa City</p>
+                            </div>
+                            <div class="boxbrd">
+                                <span>3 Beds</span></i><span>2Baths</span><span>980 sqft</span>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="btns">
+                        <div class="brsa ca_prev"><i class="fa-solid fa-angle-left"></i></div>
+                        <div class="brsa ca_next"><i class="fa-solid fa-angle-right"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cont4">
+            <div class="text">
+                <h2>꼭 필요한 것들만 챙겼다</h2>
+                <p class="pfe">코디하기 좋은 컬러와 편안한 핏 덕분에 자주 손이 가게 될 아이템이 가득하다</p>
+            </div>
+            <div class="center">
+                <div class="box">
+                    <% for(let i=0; i< place.length; i++){ %>
+                        <div class="place">
+                            <div class="imagete">
+                                <img src="<%- place[i].img%>">
+                            </div>
+                            <div class="rtext">
+                                <h2><%- place[i].title%></h2>
+                                <h3><%- place[i].subtitle%></h3>
+                            </div>
+                        </div>
+                    <% } %>
+                </div>
+            </div>
+        </div>
+        <div class="cont5">
+            <div class="centerfd">
+            <!--`<div class="box">
+                    <ul class="element">
+                        <li><i class="${element.spanSrc}"></i></li>
+                    </ul>
+                    <div class="coutk">
+                        <div class="${element.title2}">
+                            <p>0</p>
+                        </div> 
+                        <p>${element.title}</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <div class="cont6">
+            <div class="text">
+                <h2>필요한 것만 알차게 들어있는 후드티</h2>
+                <p>기본에 충실하면서도 돋보이는 디테일까지 두루 갖춘 제품</p>
+            </div>
+            <div class="box6">
+            <!-- <div class="offic">
+                    <div class="maria">
+                        <img src="">
+                    </div>
+                    <div class="textbox">
+                        <h2>Maria Blank</h2>
+                        <p>Office Manager</p>
+                        <span><i class="fa-brands fa-twitter"></i></span>
+                        <span><i class="fa-brands fa-facebook"></i></span>
+                        <span><i class="fa-brands fa-google-plus-g"></i></span>
+                        <span><i class="fa-brands fa-instagram"></i></span>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <div class="cont7">
+            <div class="text">
+                <h2>혹한기 레이어드 꿀팁!</h2>
+                <p>영하까지 기온이 내려가는 한파에는 껴입기 신공을 발휘하자!</p>
+            </div>
+            <div class="box7">
+            <% for(let i=0; i<testimonial.length; i++){ %>
+                <div class="karen">
+                    <div class="image">
+                        <img src="<%- testimonial[i].spanSrc%>">
+                    </div>
+                    <div class="textkaren">
+                        <div class="parsd">
+                            <h2><%- testimonial[i].title%></h2>
+                        </div>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                        <p class="dfds"><%- testimonial[i].title2%></p>
+                    </div>
+                </div>
+            <% } %>
+            </div>
+        </div>
+        <div class="cont8">
+            <div class="text">
+                <h2>세련된 스타일링의 기본</h2>
+                <p>천연 가죽 소재 본연의 고급스러운 광택</p>
+            </div>
+            <div class="center8">
+                <div class="janbox">   
+              <!-- <div class="jan">
+                        <div class="image">
+                            <img src=${element.spanSrc}>
+                        </div>
+                        <div class="bg">
+                            <h2>17</h2>
+                            
+                        </div>
+                        <div class="alexbox">
+                            <div class="tues">
+                                <img src=${element.title2}>
+                            </div>
+                            <h2>${element.title}</h2>
+                            <span></span><span></span>
+                        </div>
+                        <div class="selling">
+                            <h2>${element.title3}</h2>
+                            <p>Lorem ipsum is simply dummy text of the<br>
+                                printing and typersetting industry.Lorem<br>
+                                lpsum has been standard 
+                            </p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="cont9">
+            <div class="text9">
+                <h2>BRANDS AND PARTNERS</h2>
+            </div>
+            <div class="center9">
+                <div class="thebox">
+                    <div class="est">
+                        <div class="theme4">
+                            <span><img src="/img/fo51.jpg"></span><span class="eds">나이키</span>
+                            <span><img src="/img/fo52.jpg"></span><span class="eds">유니클로</span>
+                            <span><img src="/img/fo53.jpg"></span><span class="eds">루이비통</span>
+                            <span><img src="/img/fo54.jpg"></span><span class="eds">탑텐</span>
+                            <span><img src="/img/fo55.jpg"></span><span class="eds">뉴발란스</span>
+                        </div>
+                        <div class="theme4">
+                            <span><img src="/img/fo56.jpg"></span><span class="eds">배럴</span>
+                            <span><img src="/img/fo57.jpg"></span><span class="eds">자라</span>
+                            <span><img src="/img/fo58.jpg"></span><span class="eds">아디다스</span>
+                            <span><img src="/img/fo59.jpg"></span><span class="eds">노스페이스</span>
+                            <span><img src="/img/fo60.jpg"></span><span class="eds">내셔럴지오그래픽</span>
+                        </div>
+                    </div>
+                    <div class="fobtn">
+                        <div class="prevbtnfo"><i class="fa-solid fa-angle-left"></i></div>
+                        <div class="nextbtnfo"><i class="fa-solid fa-angle-right"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%- include("common/footer.ejs") %>
+</body>
+</html>

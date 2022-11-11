@@ -1,0 +1,33 @@
+nameValue = Number(nameValue);  //숫자데이터로 변형
+nameValue = parseInt(nameValue);   
+
+nameValue = String(nameValue); //문자열 데이터로 변형
+nameValue = nameValue.toString();
+
+
+focus 이벤트(집중했을때) / 
+blur 이벤트(마우스커서가 빠졋을때) / 
+change 이벤트 ( 셀렉트 태그안에서 다른옵션을 골랏을때)
+
+<!-- 
+"test.php" 전송할거다  
+method="get"-내가 입력한 데이터가 주소에 노출-->
+
+
+!=안녕  안녕이란 데이터랑 문자열 데이터랑 같지 않을때 참
+
+비교연산자
+
+
+기존의것은 지워짐 change 
+
+
+"keydown" 키보드 자판을 누르고 있는 상태
+
+
+"keyup" 눌럿다 떼는순간
+
+-하이픈 
+
+phoneView.innerHTML = `${midNumber}-${lastNumber}`; 
+//phoneView.innerHTML = midNumber + "-" + lastNumber;

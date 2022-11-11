@@ -1,0 +1,55 @@
+라디오는 
+
+여성<input id="woman" type="radio" name="gender" value="여성">
+남성<input id="man" type="radio" name="gender" value="남성">
+
+
+||
+
+변수 데이터를 담아주는 그릇의 역할
+
+조건문  if else  if(안에 넣어주는건 조건식)
+반복문 변수 비교연산자    /  비교연산자 === < >
+
+
+글자내용을 바꾸고 싶을때 document.querySelector("changeMOde").innerHTML = "밤버튼" ;
+
+
+=== 문자열 정수까지 같아야함
+
+
+수동으로 만들어서쓰는건 let
+
+
+
+a !=b 같지않습니까?  같지 않아야 참
+
+else if 조건문을 추가해서 만드는 else if문법 아래 동그라미 버튼 양옆 버튼
+
+비교연산자 true 아니면 false
+&& AND 연산자 (그리고)
+그리고는 둘다 맞아야 함 
+둘중 하나라도 거짓이면 거짓
+
+참참 = 참
+
+
+배열은 대괄호[ ]
+[ ]대괄호 표시 배열이라고 하는 데이터를 담는 특수기호
+문자열 데이터: "" ''
+
+
+반복문은 for로 시작
+
+
+반복문 ->iteration 사용했을 때 실행코드(진도)
+
+animation-iteration-count:infinite 무한반복 
+태그를 부드럽게 움직이는 동작을 걸어줄때 5 4 3 2 1 
+
+
+// //     // 정수형데이터 // 조건식(참이 될때까지만 수행) // 증감연산
+
+document 내가작업하고 있는 Html 화면 안에서
+자식 태그안에서 자식으로 존재하고 있는 태그들을 선택해줘
+querySelector 자식들 찾을때 씀

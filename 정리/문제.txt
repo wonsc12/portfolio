@@ -1,0 +1,49 @@
+ 
+
+
+
+
+let num = 0 ;
+
+let complete = 1500 ;
+
+setlnterval 함수를 활용해서
+
+숫자는 증가폭이 5씩 증가
+
+num값이 complete보다이 크거나 같으면
+
+/* 1500보다 크거나 같으면 */
+
+카운터멈춤 clearInterval
+
+숫자 증가되는 과정이  innerHTM로 텍스트 내용 
+
+보여줘야함
+
+//함수를 하나만듦
+
+countUP(목표수치,'태그대상")
+countUP(1500,"timer1")
+countUP(3000,"timer2")
+
+let num = 0;
+50씩증가
+num값이 1500보다 크거나 같으면 ->카운트 종료
+num값이 3000보다 크거나 같으면 ->카운트 종료
+
+
+이미지 파일경로도 다른파일로 바꿀수 있음
+
+setAtttribute 
+
+background-position:center;
+                        background-repeat:no-repeat;background-size: cover;
+
+6자리가 동일
+
+
+top:50%; transform: translateY(-50%); 가운데정렬 btn가운데정렬
+
+left:50%;bottom:30px; transform: translateX(-50%); 서클가운데정렬
+

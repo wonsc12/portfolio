@@ -1,0 +1,23 @@
+Browser Object Model
+(웹브라우저 관련 객체(프로퍼티,메소드))
+
+명령어 갯수가 많지만 자주사용되는 명령어 위주로 배워봅시다.
+
+**윈도우 팝업창 띄울 때 
+
+winddow.open("사이트주소","새로열릴창 속성값","창관련옵션");
+
+예시
+window.open("https://m.daum.net","_blank","width=600,height=300");
+
+**다른 웹사이트로 강제로 이동시킬 때
+window.location.href = "https://m.naver.com";
+
+**접속한 웹브라우저 정보값 확인
+window.navigator.userAgent
+
+**어떤 웹브라우저로 접속했는지 값 체크시 사용하는 함수
+window.navigator.userAgent.match()
+
+
+2시까지	

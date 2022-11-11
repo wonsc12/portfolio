@@ -1,0 +1,12 @@
+npm init
+
+npm install ejs mongodb express moment 
+
+npm install passport passport-local express-session
+
+npm install moment-timezone
+
+npm install multer  파일첨부
+
+nodemon
+

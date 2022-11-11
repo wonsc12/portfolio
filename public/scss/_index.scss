@@ -1,0 +1,918 @@
+* { margin:0 ;padding:0;}
+        ul,li,ol { list-style:none;}
+        a { text-decoration:none;}
+        img,video { vertical-align:middle;}
+        table {border-collapse:collapse;}
+        input,select,textarea { outline:0;}
+        textarea { resize:none;}
+        body { line-height:1; overflow-x: hidden;} 
+
+
+// 로그인 페이지
+
+#login_container { display: flex; justify-content: center;  margin-top: 150px;
+    .center { width: 960px; display: flex; justify-content: space-between;align-items: center;
+        #login_form { width: 50%; text-align: center;
+            .logi { text-align: center;
+                h2 {
+
+                }
+            }
+            .btn { width: 183px; margin: 30px auto; display: flex; 
+                border: 2px solid #f4f4f4;  border-radius: 20px;
+                .btns {  border: none; line-height: 30px; width: 50%; background-color: #fff;
+                    
+                }
+                .qwe { border-right: 1px solid #f4f4f4;}
+               
+            }
+            .line {
+                .text {padding-left: 23px; width:80%; height: 54px; border-radius: 20px; border: none; border: 2px solid #f4f4f4;}
+                .pass{ margin: 22px 0 22px 0;}
+            }
+            .btnok {  text-align: start; margin-left: 34px;
+                .qwe { width: 144px; height: 54px; border: none; color: #fff; background-color: #274abb; border-radius: 20px;margin-bottom: 34px;}
+            }
+            .dont {}
+        }
+        .im22 { width: 50%; position: relative;
+            img { width: 100%;}
+            .bg { position: absolute;left:0;top:0; transition:all 0.5s; width:100%; height:100%; background-color: #000; opacity:0;  z-index: 3;display: flex; justify-content: center; align-items: center;
+                .text {  background-color: #000; opacity: 0.8; width: 270px; height: 216px; border: 2px solid #5f5344;  text-align: center; display: flex; align-items: center; justify-content: center;
+                    h2 { color:#fff;
+                    &:hover{color: yellow;}}
+                }
+                
+            }
+            &:hover .bg {opacity:0.6;z-index: 55;}
+        }
+    }
+}
+
+// 회원가입 페이지
+
+#join_container { display: flex; justify-content: center;  margin-top: 150px;
+    .center { width: 960px; display: flex; justify-content: space-between;align-items: center;
+        #join_form { width: 50%; text-align: center;
+            .logi { text-align: center;
+                h2 {
+
+                }
+            }
+            .btn { width: 183px; margin: 30px auto; display: flex; 
+                border: 2px solid #f4f4f4;  border-radius: 20px;
+                .btns {  border: none; line-height: 30px; width: 50%; background-color: #fff;
+                    
+                }
+                .qwe { border-right: 1px solid #f4f4f4;}
+               
+            }
+            .line { position: relative;
+                .text {margin-bottom: 35px; padding-left: 23px; width: 80%; height: 54px; border-radius: 20px; border: none; border: 2px solid #f4f4f4;}
+                .name {}
+                .email {}
+                .pass{ }
+               
+                .message { position: absolute;left: 45px; bottom: 10px;}
+            }
+            .line.ok .text, .line.ok .chk2{border:1px solid #00c850;}
+            .line.no .text, .line.no .chk2{border:1px solid red;}    
+            
+            .btnok {  text-align: start; margin-left: 34px;
+                .qwe { width: 144px; height: 54px; border: none; color: #fff; background-color: #274abb; border-radius: 20px;margin-bottom: 34px;}
+            }
+            .dont {}
+        }
+        .im22 { width: 50%; position: relative;
+            img { width: 100%;}
+            .bg { position: absolute;left:0;top:0; transition:all 0.5s; width:100%; height:100%; background-color: #000; opacity:0;  z-index: 3;display: flex; justify-content: center; align-items: center;
+                .text {  background-color: #000; opacity: 0.8; width: 270px; height: 216px; border: 2px solid #5f5344;  text-align: center; display: flex; align-items: center; justify-content: center;
+                    h2 { color:#fff;
+                    &:hover{color: yellow;}}
+                }
+                
+            }
+            &:hover .bg {opacity:0.6;z-index: 55;}
+        }
+    }
+}
+
+// 이미지
+.image {
+    .imagebox { width: 100%; height: 300px;
+        img { width: 100%; height: 100%;}
+    }
+}
+
+
+// 메인페이지
+.header { 
+    .logia { background-color: #274abb; display: flex; justify-content: center;
+        .center { width: 1100px; 
+            .login { display: flex; justify-content: flex-end;
+                .condition { display: flex; align-items: center;
+                    .loj { line-height: 40px; color: #fff; margin: 0 10px; }
+                    .arr { color:#fff; }
+                    .loginuser { }
+                    .logina {}
+                    .name { 
+                        a {color: #fff;}
+                    }
+                    .loginb { }
+                }
+            }
+        } 
+    }
+    .housy{ display: flex; justify-content: center;
+        .center2 { width: 1100px; display: flex; justify-content: flex-start;
+            .logo { margin-right: 63px;
+                h2 { line-height: 90px;
+                    a { color: #000;}
+                }
+            }
+            .gnb { display: flex; text-align: center; 
+                > li { line-height: 90px; width: 110px; position: relative;
+                    position: relative;
+                    a { color: #000;}
+                    .speq {position: absolute; top:34px;}
+                    .brand { display: none;  position: absolute; left:23px; z-index: 5;
+                        li { line-height: 50px;
+                            a { color: #000;}
+                            .intro { color: #274abb; font-weight: bold;}
+                            .list {color: #274abb; font-weight: bold;}
+                        } 
+                       
+                        
+                        
+                    }
+                } 
+            }    
+        }    
+    }   
+}  
+.container {
+    .cont1 {
+        .silder {  position: relative; width: 100%; height: 800px; 
+            .view{ display:flex; width:100%;  
+                > div{width:100%;  height: 800px;position: absolute; opacity: 0;z-index: 2;transition:all 1s;
+                    &:nth-child(1){opacity: 1; z-index: 3;}
+                    a {
+                        img {width: 100%; height: 100%;}
+                    }
+                }
+            }
+            .slidetext { position: absolute; left:50%;top:50%; z-index: 6;
+                        transform:translate(-50%,-50%); text-align: center;
+                h2 { color: #fff; font-size: 40px; font-weight: bold;}
+                p { color: #fff; font-size: 30px; margin: 40px 0 30px 0; line-height: 35px;}    
+            }
+            .boxtwo { display: flex;  justify-content: center;
+                .getbox { background-color: #fff; margin: 0 10px; border: 1px solid #fff; width: 200px; height: 50px; display: flex; justify-content: center; align-items: center;
+                    a { color: #274abb; font-weight: bold;}
+                    &:hover { background-color: #274abb;}
+                    &:hover a { color: #fff;}
+                }
+                
+                
+            }
+        }
+        
+        .btns {
+            div{ position:absolute ; top:50%; transform: translateY(-50%); width: 35px; 
+            height: 55px; background-color: #fff; z-index: 4; display: flex;
+            border-radius: 20px;
+            &:hover {background-color: #274abb;}
+            }
+            
+            .prevBtn {left:30px;
+                i{position: absolute;left:50%;top:50%;
+                    transform:translate(-50%,-50%);
+                    font-size: 50px;color: #274abb;
+                    &:hover {color: #fff;} 
+                }
+                 
+            }     
+            .nextBtn {right:30px;
+                i{position: absolute;left:50%;top:50%;
+                    transform:translate(-50%,-50%);
+                    font-size: 50px;color: #274abb;
+                    &:hover {color: #fff;}
+                }
+            }
+            
+        
+        }
+        .circleBtn{ z-index: 4; display: flex; position: absolute; left: 50%;bottom: 10px; transform: translateX(-50%);
+            .on{
+                a{background-color: blue;width: 50px; border-radius: 20px;}
+            }
+            li{
+                
+                a {display: block; width: 20px; height: 20px; border-radius: 50%; 
+                   background-color: #fff; margin: 5px  15px; transition: all 0.5s;}
+                
+
+            }    
+
+        }
+    }
+    .cont2 { padding: 100px 0;  background-color: #f9f9f8;
+        .text { margin: 0 auto; width: 1100px; text-align: center;
+            h2 {}
+            p { margin: 30px 0 40px 0;}
+        }
+        .centerer{ display: flex; margin: 0 auto; width: 1100px; justify-content: space-between;
+            .picc { width: 49%; height: 540px; overflow: hidden;
+                img { width: 100% ; height: 100%; transition: all 1s;}
+                &:hover img {transform: scale(1.5);}
+            }
+            
+            .textWrap2{ width: 49%; height: 540px;
+                .text23 { display: flex; height: 24.7%; width: 100%; border: 1px solid #adb5bd;
+                        align-items: center; justify-content: center; background-color: #fff;
+
+                    .src22 {width: 60px; height: 60px;
+                        img { width: 100%; height: 100%;}
+                    }
+                    .text32 { width: 75%; margin-left: 20px;
+                            h2 {margin-bottom: 15px;}
+                            p { line-height: 20px; }
+                        
+                    }
+                }
+
+            }
+        }
+    } 
+    .cont333 {  padding: 100px 0 ;
+        .text { width: 1100px ; margin: 0 auto; text-align: center;
+            h2 {}
+            p {margin: 26px 0 46px 0 ;}
+        }
+        .center44 {width: 1100px; margin: 0 auto; display: flex; position: relative; 
+            .box53{  display: flex; width: 200%; transition: all 1s;margin-left: 0%; overflow: hidden;
+                .pdto {  width: 50%; display: flex; justify-content: space-between;
+                    .forrent { margin-right: 20px; border: 1px solid #adb5bd; box-sizing: border-box; position: relative;
+                        .image { width: 255px ; height: 170px; overflow: hidden; 
+                            img { width: 100%; height: 100%;transition: all 1s;}
+                        }
+                        &:hover img { transform: scale(1.5);}
+                        &:hover .ford { transform: scale(1.5); }
+                        .bgimage { display: flex; align-items: center; justify-content: center; 
+                                  border-radius: 10px; position: absolute; overflow: hidden;
+                                  top:19px; left:19px;z-index: 5;width: 93px; height: 30px; background-color: #fff;
+                             
+                                  .ford{ color: #274abb; transition: all 1s; font-size: 10px;} 
+                            &:hover {background-color: #274abb;}
+                            &:hover .ford { color: #fff;}
+                        }
+                       
+                        
+                        .textt { margin :23px  0 23px 18px;
+                            p {margin-top: 15px;
+                                i { margin-right: 5px;}
+                            }
+                        }
+                        .boxbrd { border-top: 1px solid #adb5bd;
+                            span { line-height: 40px; width: 33.333333%; text-align: center;display: inline-block;
+                                &:nth-child(2) { display: inline-block; border-right: 1px solid #adb5bd; border-left: 1px solid #adb5bd; box-sizing: border-box;}
+                            }
+    
+                        }
+                    }
+                    
+                }
+                
+                .circle32 { position: absolute; left:50%; bottom: -65px; transform: translateX(-50%);
+                    z-index: 6;display: flex;
+                    li {
+                        display: block; width: 25px; background-color: #000; border-radius: 100%;
+                                    height: 25px; margin: 0 10px;transition: all 0.5s;  
+                                    
+                                    a {display: block; height:100%;}
+
+                    &:first-child { background-color: transparent; border:2px solid #fff; }                
+                    }
+
+                    
+                    li.on {background-color: #274abb;width: 25px; height: 25px; border-radius: 100%;}          
+                            
+                }
+                
+            }            
+        }
+    }
+    .cont4 { padding: 100px 0; background-color: #f9f9f8;
+        >.text { text-align: center;
+            .pfe { margin: 27px 0 47px 0;}
+
+        }
+        .center { width: 1100px;  margin: 0 auto;
+            .box { display: flex; flex-wrap: wrap; 
+                .place { width: 31.333333%; margin: 1%; height: 250px;  position: relative;
+                    .imagete { width: 100%;height: 250px; overflow: hidden;
+                        img { width: 100%; height: 100%; transition: all 1s;}
+                    }
+                    &:hover img { transform: scale(1.5);}
+                    .rtext { position: absolute; bottom: 30px; left: 35px; 
+                        h2 { color: #fff; margin-bottom: 15px; transition: all 1s;overflow: hidden;
+                            &:hover { color: #274abb;}
+                        }
+                        h3 { color: #fff;transition: all 1s;overflow: hidden;
+                            &:hover { color: #274abb;}
+                        }
+                    }
+                    &:hover h2 { transform: scale(1.5);}
+                    &:hover h3 { transform: scale(1.5); }
+                }
+                .dsdfr {width: 64.5%; height: 250px;
+                    .imagete { width: 100%;height: 250px; 
+                        img {width: 100%; height: 100%;}
+                    }
+                    
+                }
+                
+            }
+        }
+    }
+    .cont5 { display: flex; justify-content: center; background-image: url(../img/image20.jpg); height: 270px; background-position: center; align-items: center;
+        .centerfd { display: flex; width: 1100px;  justify-content: space-between;
+            .box { display: flex; width: 25%;
+                .element {
+                    li { margin: 0 20px; width: 80px; height: 80px; background-color: #fff; 
+                        display: flex; justify-content: center; align-items: center; transition: all 1s; 
+                        i {  font-size: 40px; color: #274abb; 
+                           
+                        }
+                        &:hover { background-color: #274abb;}
+                        &:hover i { color: #fff;}
+                    }
+                }
+                .coutk {  margin: 0 10px; 
+                    >div { margin-bottom: 20px; display: flex; justify-content: center; align-items: center;
+                        p { font-size: 30px; color: #fff; font-weight: bold; 
+                            &:hover {color: #274abb;}
+                        }
+                    }
+                    p { font-size: 15px; color: fuchsia;font-weight: bold; }
+                    
+                }
+            }
+        } 
+    }
+    .cont6 { padding: 100px 0;
+        .text {width: 1100px;  margin: 0 auto;  text-align: center;
+            p {margin: 25px 0 42px 0;}
+        }
+        .box6{display: flex; width: 1100px; justify-content: center; margin: 0 auto;
+            .offic { width: 24%; border: 1px solid #adb5bd;  margin: 0 1%; padding-bottom: 30px;
+                .maria { width: 254px; height:210px ; overflow: hidden;
+                    img { width: 100%; height: 100%; transition: all 1s;}
+                }
+                &:hover img { transform: scale(1.5);}
+                .textbox{ text-align: center;
+                    h2 {margin: 28px 0 10px 0;}
+                    p {margin-bottom: 18px;}
+                    span { margin: 0 10px;}
+                }
+            }
+        }
+    }
+    .cont7 { height: 765px; background-image: url(../img/image25.jpg); background-position: center;
+        .text { width: 1100px; margin: 0 auto; text-align: center; padding-top: 100px;
+            p { padding:23px 0 90px 0;}       
+        }
+        .box7 { display: flex; justify-content: space-between; width: 1100px; margin: 0 auto; text-align: center; 
+               
+            .karen { position: relative;  border: 1px solid #adb5bd; background-color: #fff;   width: 31.333333%; margin: 0 1%;
+                .image{ width: 100px; height: 100px; margin: 0 auto; position: absolute; left:50%; top:-50px; transform: translateX(-50%);
+                    img { width: 100%; height: 100%;border-radius: 100%;}
+                }
+                .textkaren {
+                    .parsd { margin: 100px 0 20px 0;}
+                    span { color: #ffa500;}
+                    .dfds {margin: 20px 0 37px 0; line-height: 20px;}
+                }   
+            }
+        }
+    }
+    .cont8 { padding: 100px 0;
+        .text { width: 1100px; margin: 0 auto; text-align: center; padding-top: 100px;
+            p { padding:23px 0 90px 0;}
+        } 
+        .center8 { width: 1100px; margin: 0 auto;
+            .janbox {  display: flex; justify-content: space-between; 
+                .jan { width: 350px; position: relative; border: 1px solid #adb5bd;
+                    .image { width: 100%; height: 193px; overflow: hidden;
+                        .emel { width: 100%; height: 100%; transition: all 1s;}
+                        
+                    
+                        &:hover .emel { transform: scale(1.5);}
+                        
+                        
+                    }
+                    &:hover .bg { background-color: #fff;}
+                    
+                    &:hover .feos {  transform: scale(1.5);}
+                    .bg { width: 60px; height: 60px; position: absolute; top:15px; right: 15px; background-color: #274abb ; border-radius: 5px;
+                        display: flex; justify-content: center; align-items: center;  overflow: hidden;
+                        .feos { color: #fff; font-size: 15px; line-height: 20px; transition: all 1s;}
+                    }
+                    &:hover .feos {  color: #274abb;}
+                    .alexbox{ display: flex; justify-content: center; align-items: center; border-bottom:  1px solid #adb5bd;  position: relative; height: 45px;
+                        .tues { width: 60px; height: 60px; position: absolute; left:20px; top:-30px;
+                            img {width: 100%; height: 100%; border-radius: 100%;}
+                        }
+                        h2 {margin:0 30px; font-size: 20px;}
+                        span {margin: 0 10px;}
+                    }
+                    .selling { margin: 30px 0 30px 20px;
+                        h2 {margin-bottom: 10px;}
+                        p { line-height: 30px;}
+                    }   
+                }
+            }
+        }    
+    }
+    .cont9 { padding: 100px 0; background-color: #f9f9f8;
+         .text9 { width: 1100px; margin: 0 auto; text-align: center; padding-top: 100px;
+            p { padding:23px 0 90px 0;}
+        }
+        .center9 { width: 1100px; margin: 0 auto ; 
+            .thebox { 
+                position: relative; overflow: hidden;
+                .est {  width:200%; margin-left: 0%; transition: all 0.5s; display: flex; justify-content: space-between;
+                    .theme4 {width: 50%; display: flex; justify-content: center;
+                        span{ font-size: 20px; margin: 0 8px; line-height: 200px; display: flex; align-items: center;
+                            i { color: #274abb; font-size: 50px;
+                            
+                                &:hover:nth-child(1){color:red;}
+                            }
+                            
+                        }    
+                    }    
+                }
+            }
+            .fobtn {
+                div{ position:absolute; top:50%; transform: translateY(-50%); width: 60px; 
+                height: 100px; background-color: #fff; z-index: 4; display: flex;
+                border-radius: 50px; border: 1px solid #adb5bd;
+                &:hover { background-color: #274abb;}
+                }
+                .prevbtnfo {left:10px;
+                    i{position: absolute;left:50%;top:50%;
+                        transform:translate(-50%,-50%);
+                        font-size: 70px;color: #274abb; 
+                        &:hover { color: #fff;}
+                     }
+                }     
+                .nextbtnfo {right:10px;
+                    i{position: absolute;left:50%;top:50%;
+                    transform:translate(-50%,-50%);
+                    font-size: 70px;color: #274abb; 
+                    &:hover { color: #fff;}
+                    }
+                }
+            }
+        } 
+    }
+} 
+
+
+
+
+
+// footer 페이지
+.footer {  background-color: #274abb;  background-color: #202040;
+    .center { width: 1100px; display: flex; justify-content: space-between; margin: 0 auto;
+              padding:86px 0 83px 0;
+
+        .contact {
+            p { color:#fff; line-height: 40px;
+                &:nth-child(1) { font-size: 30px; margin-bottom: 40px;}
+            }
+            
+        }
+        .properties {
+            p { color: #fff;line-height: 40px;
+                &:nth-child(1) { font-size: 30px;margin-bottom: 40px;}
+            }
+        }
+        .quick {
+            p { color: #fff;line-height: 40px;
+                &:nth-child(1) { font-size: 30px;margin-bottom: 40px;}
+            }
+        }
+        .subscribe{
+            p {font-size: 30px; color: #fff;margin-bottom: 40px;}
+            .bin{ display: flex;
+                li { margin: 0 5px; 
+                    a { font-size: 30px; 
+                     
+                        i { color: #fff; background-color: #1a1a38; width: 65px; height: 65px; display: flex; justify-content: center; align-items: center;   }
+                    }
+                    &:hover i {background-color: #fff;}
+                    &:hover i { color: #274abb;}    
+                }
+            }
+            
+        }
+        
+    }
+    .theme { display: flex; justify-content: center; background-color: #1a1a38; 
+            
+        p { color: #fff; line-height: 100px;
+            
+        }
+        
+    }
+}
+
+// 게시글 작성 페이지
+#container {
+    .cont1 { position: relative;
+        .text {position: absolute; left:50%;top:50%;
+            transform:translate(-50%,-50%); text-align: center;
+            h2 { margin-bottom: 11px; color: #fff; font-size: 45px;}
+            p { color: #fff;}
+        }
+    }
+    .cont2 { text-align: center;
+        .cont { margin-top: 106px;
+            h2 {}
+            p { margin: 30px 0 50px 0;}
+        }
+        .center { width: 1020px; display: flex; justify-content: space-between; margin: 0 auto;
+            .box {
+                .add {
+                    i { font-size: 40px;}
+                    h2 { margin: 26px 0 16px 0;}
+                }
+            }
+        }
+        .brd_center2{ display: flex; justify-content: center; margin-top: 50px;
+            #brd_form {  width: 730px;
+                .name { display: flex;
+                    .put { padding-left: 20px; width: 44%; border: none; border: 2px solid #f4f4f4; height: 43px; margin: 0 10px;
+
+                    }
+                }
+                .teq { margin: 20px 0 20px 0;}
+                .area {width: 94%; border: none; border: 2px solid #f4f4f4; height: 240px; padding: 20px 0 0 20px;}
+                .filebox { width: 100%; height: 50px; display: flex; justify-content: center; 
+                    .file {margin-top: 20px; border:none; width: 94%; height: 43px; border: 2px solid #f4f4f4; padding: 10px 0 0 20px;}
+                }
+                .btnss {
+                    .btn { border: none;width: 144px; height: 54px; border: none; color: #fff; background-color: #274abb; border-radius: 20px; margin: 50px 10px;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 게시글 목록페이지
+
+.cont2list   { display: flex; justify-content: center;
+    .brd_center3{ width: 1100px;
+        .grid {margin:100px 0 30px 0    ; display: flex; justify-content: space-between; align-items: center;  border: 1px solid #adb5bd; height: 60px;
+            .brands {  display: flex; align-items: center;
+                i { color: #fff; width: 60px; height: 60px; background-color: #274abb; display: flex; justify-content: center; align-items: center; font-size: 40px; margin-right: 22px;}
+            }
+            #myFoty { margin-right: 30px;
+                .box4 { width: 85px; height: 38px;border-radius: 4px;border: 1px solid #adb5bd;
+                    
+                }
+                .box5 { padding-left: 10px; width: 240px; height: 38px;border-radius: 4px; border: 1px solid #adb5bd;}
+                #searchBtn {  width: 50px;  height: 38px;border-radius: 4px; background-color:#adb5bd ; border: none;}
+                
+            } 
+        }
+        .aven {width: 100%; display: flex; flex-wrap: wrap;
+            .line {  width: 350px; margin: 0 8px; position: relative; border: 1px solid #adb5bd; box-sizing: border-box; margin-bottom: 30px;
+                .ones { }
+                .wrwd { width: 100%; height: 233px;
+                    img { width: 100%; height: 100%;}
+                
+                    .wrtext { position: absolute; left:17px; top:33px ; display: flex; text-align: center; align-items: center; 
+                        p{color: #fff; width: 90px; line-height: 40px; margin: 0 5px; border-radius: 10px;
+                            &:nth-child(1) { background-color: #274abb;}
+                            &:nth-child(2) { background-color: #ff0000;}
+                        }
+                    }
+                }
+                .wrwd7 { padding-left: 20px;
+                    .wrwd5 { margin-top: 24px;}
+                    .wrwd2 { margin: 20px 0;}
+                }
+                .wrwd6 {width: 310px;  display: flex; justify-content: space-between; margin: 0 auto; }
+                
+            }
+        }
+        .insert { margin: 50px 0; width: 100%; display: flex; justify-content: end; align-items: center;
+            a { display: block; display: flex; justify-content: center; align-items: center; width: 100px; height: 50px; color: #fff ; background-color: #274abb;}    
+            .list2 { margin-left: 20px;}
+        }
+    }
+}
+
+
+// 회원정보 수정페이지
+
+.updateform { width: 730px; margin: 100px auto; border: 1px solid #adb5bd; 
+    .userid { width: 400px; height: 50px; font-size: 40px; margin: 20px 0 20px 15px;}
+    .useridbox {    
+        .label {margin-bottom: 25px;padding-left: 15px;}
+        .users { width: 95%; height: 46px;margin-bottom: 25px; padding-left: 15px;}
+        .userbox {text-align: center;}
+    }
+    .btn {border: none;width: 144px; height: 54px; border: none; color: #fff; background-color: #274abb; border-radius: 20px; margin: 50px 10px;}
+    
+    
+}
+
+// 게시글 수정페이지
+
+.cont4 {
+    .brd_center2 {
+        #brd_update {
+            .name { display: flex;
+                .put { padding-left: 20px; width: 44%; border: none; border: 2px solid #f4f4f4; height: 43px; margin: 0 10px;
+
+                }
+            }
+            .teq { margin: 20px 0 20px 0;}
+            .area { width: 94%; border: none; border: 2px solid #f4f4f4; height: 240px; padding: 20px 0 0 20px;}
+            .filebox { width: 100%; height: 50px; display: flex; justify-content: center; 
+                .file {margin-top: 20px; border:none; width: 94%; height: 43px; border: 2px solid #f4f4f4; padding: 10px 0 0 20px;}
+            }
+            .btnss {
+                .btn { border: none;width: 144px; height: 54px; border: none; color: #fff; background-color: #274abb; border-radius: 20px; margin: 50px 10px;
+
+                }
+            }
+        }
+    }
+}
+
+
+// 게시글 상세페이지
+
+#container {
+    .cont1-re { position: relative;
+        .textblog{  background-color:  #efefef; width: 100%;
+            height: 220px;
+        }
+        .text {position: absolute; left:50%;top:50%;
+            transform:translate(-50%,-50%); text-align: center;
+            h2 { margin-bottom: 11px; color: #fff; font-size: 45px;}
+            p { color: #fff;}
+        }
+    }
+    .brd_centerload {  width: 1100px; margin: 100px auto; 
+        .upload { width: 100%; height: 615px;
+            img { width: 100%; height: 100%;}
+        }
+        .filebox {width: 18%;height: 44px; border: 1px solid #adb5bd; display: flex; align-items: center;padding-left: 10px;}
+        .qwer12 {margin: 20px 0;  margin-right: 20px;}
+        .sub22 { display: flex; 
+            i { margin-right: 5px; }
+            .qwer122 { display: flex; margin-right: 20px; }
+        }
+        
+    }
+    .brqe { margin: 50px auto; width: 1100px; display: flex; justify-content: flex-start; align-items: center;
+        .brd { margin: 0 5px; color: #fff; width: 80px; height: 44px; background-color: #274abb; display: block;display: flex; justify-content: center  ; align-items: center; }
+    }
+    .comment {  width: 1100px;  margin:  60px auto;
+        textarea { padding:10px 0 0 10px ; height:80px; resize: none; margin-top: 35px; width: 50%;}   
+
+        .sigs {     margin-top: 34px;
+            .btn { width: 170px; height: 44px; border: none; background-color: #274abb; color: #fff;}
+        }
+    }
+    .connetw{  
+        .commentss {width: 1100px;  margin: 0 auto  ;
+            h2 { margin-bottom: 28px;}
+        }
+        .comment_box {   width: 1100px; margin:  60px auto;
+            .comupdate_form { display: none;}
+            .comment_context { line-height: 20px;white-space:pre; }
+            .comment_date { margin: 10px 0;}
+            .comment_btn { margin-top: 10px;}
+        
+            .comupdate_form {
+                .virs { display: flex; align-items: center;   
+                    .comContext {  margin-top: 15px; height: 50px; margin-right: 20px;width: 50%;}
+                    .comment_ok { width: 80px; height:  40px ; margin-right: 5px; }
+                    .comment_no { width: 80px; height:  40px}
+                    button {border: none;  color: #fff; background-color: #274abb;}
+                }
+       
+            }     
+        }  
+    }
+}
+
+// 게시글 수정 페이지
+
+// 게시글 작성 페이지
+#container {
+    .cont1 { position: relative;
+        .text {position: absolute; left:50%;top:50%;
+            transform:translate(-50%,-50%); text-align: center;
+            h2 { margin-bottom: 11px; color: #fff; font-size: 45px;}
+            p { color: #fff;}
+        }
+    }
+    .cont4{
+        .brd_center2{ display: flex; justify-content: center; margin-top: 50px;
+            #brd_update {  width: 730px;
+                .name { display: flex;
+                    .put { padding-left: 20px; width: 44%; border: none; border: 2px solid #f4f4f4; height: 43px; margin: 0 5px;
+
+                    }
+                }
+                .teq { margin: 20px 0 20px 0;}
+                .area {width: 94%; border: none; border: 2px solid #f4f4f4; height: 240px; padding: 20px 0 0 20px;}
+                .filebox { width: 100%; height: 50px; display: flex; justify-content: center; 
+                    .file {margin-top: 20px; border:none; width: 89%; height: 43px; border: 2px solid #f4f4f4; padding: 10px 0 0 20px;}
+                }
+                .btnss {
+                    .btn { border: none;width: 144px; height: 54px; border: none; color: #fff; background-color: #274abb; border-radius: 20px; margin: 50px 10px;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// 회사소개페이지
+
+#container {
+    .cont1 { position: relative;
+        .text {position: absolute; left:50%;top:50%;
+            transform:translate(-50%,-50%); text-align: center;
+            h2 { margin-bottom: 11px; color: #fff; font-size: 45px;}
+            p { color: #fff;}
+        }
+    }
+    .cont2about { width: 1100px; margin: 0 auto;  display: flex; justify-content: space-between; padding: 100px 0;
+        .video { width: 40%; 
+            .viewo { 
+                .vid01 { width: 100%;}
+            }
+            
+         }
+        .videotext { width: 60%; text-align: center;
+            h2 {margin: 30px 0 32px 0}
+            p { line-height: 30px;}
+
+        }
+        .textbox { transition: all 1s; width: 160px; height: 60px; border-radius: 20px; margin:30px 0  0 75px;
+                display: flex; justify-content: center; align-items: center; background-color: #fff; border: 1px solid #acacac; 
+                a { color: #274abb ; }
+
+                &:hover { background-color: #274abb;}
+                &:hover a {color: #fff; }        
+        }  
+        
+       
+    }
+    .cont3 {  padding: 100px 0; 
+        .textboxst { text-align: center; 
+            h2 {}
+            p { margin: 25px 0 40px 0;}
+        } 
+        .center { width: 1100px; margin: 0 auto;
+            .listWrap{
+
+                display: flex;flex-wrap:wrap;justify-content: space-between;
+                
+                
+                .listbox{ width:255px; text-align:center;margin-bottom:40px;
+                          background-color: #fff;display:none; border: 1px solid #adb5bd;
+                    .image{width:220px;height:180px;  border-radius: 5px;  margin-bottom: 10px;
+                          overflow: hidden; margin: 15px auto;
+                    img { width:100%; height: 100%; transition: all 1s; }
+                    &:hover img{ transform: scale(1.5);}      
+                    }
+                    
+                     
+                    h2{ font-size: 16px;}
+                    p{font-size: 11px;margin:12px; line-height: 30px;}
+                    .more{display:block;width:150px; height: 40px; color:#274abb; 
+                        background-color: #fff; border:none;line-height: 45px;
+                        margin: 0 auto;border:1px solid #acacac; border-radius: 15px;
+                        transition: all 1s; display: flex; align-items: center; justify-content: center;
+                        &:hover { color: #fff; background-color: #274abb;}    
+                    }
+                    
+                    .listBot{border-top: 1px solid #000 ; padding-top: 10px;
+                        display: flex;justify-content:space-between; margin:20px;
+                        .left{display: flex;justify-content: flex-start;    
+                            span{color:red;}
+                            .stmay { color:#000; line-height: 22px;font-size: 13px;}
+                        }   
+                        
+                        .right {display: flex;justify-content: flex-end;
+                            span{color:red;}
+                            .stmay2 { color:#000; line-height: 22px;font-size: 13px;}
+                        
+                        }      
+                    }   
+                }
+                
+               > .show{display: block;}     
+            }
+            .btnWrap { text-align: center; 
+
+                .loadMore {transition: all 1s;  font-weight: bold;  width:150px; height: 50px; color:#274abb; background-color: #fff; border:1px solid #acacac; border-radius: 20px;
+                    &:hover { color: #fff; background-color: #274abb;}
+                }  
+            }  
+        }
+    }
+
+    .contfds4 { background-color: #f2f2f2; margin: 0 auto; padding: 100px;
+        .textboxsw { text-align: center;
+            h2 {}
+            p { margin: 25px 0 40px 0;}
+        } 
+        .center { width: 1200px; display: flex; margin: 0 auto; justify-content: center;
+            .circle {margin-top: 40px;
+                .srco { margin-right: 40px;}
+                .sw { display: flex ; margin: 0 0 30px 40px;
+                    li { margin-right: 40px; 
+                        img { width: 100px; height: 100px; border-radius: 100%;}
+                    }
+                }
+            }
+            .silder { width: 540px;  background-color: #fff; overflow: hidden; border-radius: 10px; padding-bottom: 40px;
+                .view { width: 800%;  display: flex; transition: all 1s; margin-left: 0%;
+                    > div { width: 12.5%; 
+                        .shatp{ margin: 30px 0 20px 27px;
+                            span {font-size:41px ; color: #acacac;  }
+                            p{font-size: 13px; line-height: 20px;}
+                        }
+                        .shatp2{ margin-left: 27px;
+                            .chris {display: flex;
+                                img { width: 100px; height: 100; border-radius: 100%;}
+                                > div { 
+                                    .gor{ font-weight: bold; font-size: 20px; margin: 20px 12px 10px 15px;}
+                                    p{margin-left: 15px;}
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .cont5 { padding: 100px 0; margin: 0 auto;
+        .textboxst { text-align: center;
+            h2 {}
+            p { margin: 25px 0 40px 0;}
+              
+        }
+        .centerMaria { margin: 0 auto; display: flex; width: 1100px; justify-content: space-between;
+            .suppbox { border: 1px solid #acacac;
+                .supimage { width: 350px; height: 190px; overflow: hidden;
+                    img { width: 100%; height: 100%; transition: all 1s;}
+                }
+                & :hover img{ transform: scale(1.5);}
+                .textbox {margin: 25px 0 25px 25px;
+                    h2 { margin: 10px 0 22px 0;}
+                    p { margin-top:15px;}
+                    
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1000px){
+    // 회원정보 수정 페이지
+    .header { 
+        .logia { 
+            .center { width: 100%; 
+                .login {  margin-right: 50px;
+                    
+                }
+            } 
+        }
+        .housy{ 
+            .center2 { width: 80%; margin: 0 auto; display: flex; justify-content: space-between;
+                
+            }    
+        }   
+    } 
+    .footer {  
+        .center { width: 90%;    
+        }
+        
+    } 
+}

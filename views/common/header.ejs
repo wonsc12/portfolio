@@ -1,0 +1,69 @@
+<div class="header section">
+    <div class="logia">
+        <div class="center">
+            <div class="login">
+                <div class="condition">
+                    <% if(!userData) { %> <!-- // 회원정보프로퍼티가 없을때 -->
+                    <i class="fa-solid fa-right-to-bracket arr"></i>
+                    <a class="loginuser loj" href="/login">로그인</a>
+                    <i class="fa-solid fa-registered arr"></i>
+                    <a class="logina loj" href="/join">회원가입</a>
+                    <% } else { %>
+                    <div class="name loj"><a href="/mypage"><%- userData.joinid %>님</a></div> 
+                    <a class="loginb dsf" href="/mypage">회원정보수정</a>
+                    <a class="loginb loj" href="/logout">로그아웃</a>
+                    <% } %>    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="housy">   
+        <div class="center2">
+            <div class="logo">
+                <h2><a href="/">턴애플</a></h2>
+            </div>
+            <ul class="gnb">
+                <li><a href="#">랭킹</a>
+                    <span class="material-symbols-outlined speq">expand_more</span>   
+                <ul class="brand">
+                    <li><a class="intro" href="/introduce">브랜드</a></li>
+                    <li><a href="#">비전</a></li>
+                    <li><a href="#">오시는길</a></li>
+                </ul>
+                </li>
+                <li><a href="#">업데이트</a>
+                    <span class="material-symbols-outlined speq">expand_more</span>   
+                    <ul class="brand">
+                        <li><a href="#">기업소개</a></li>
+                        <li><a href="#">회사연혁</a></li>
+                        <li><a href="#">개요</a></li>
+                    </ul> 
+                </li>
+                <li><a href="#">코디</a>
+                    <span class="material-symbols-outlined speq">expand_more</span>   
+                    <ul class="brand">
+                        <li><a href="#">채용</a></li>
+                        <li><a href="#">조직문화</a></li>
+                        <li><a href="#">복리후생</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">세일</a>
+                    <span class="material-symbols-outlined speq">expand_more</span>   
+                    <ul class="brand">
+                        <li><a class="list" href="/brdlist">게시판</a></li>
+                        <li><a href="#">문의사항</a></li>
+                        <li><a href="#">뉴스</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">매거진</a>
+                    <span class="material-symbols-outlined speq">expand_more</span>   
+                    <ul class="brand">
+                        <li><a href="#">고객센터</a></li>
+                        <li><a href="#">사업장소개</a></li>
+                        <li><a href="#">질문게시판</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

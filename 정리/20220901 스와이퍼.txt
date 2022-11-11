@@ -1,0 +1,25 @@
+https://swiperjs.com/
+
+https://apis.map.kakao.com/
+
+https://isotope.metafizzy.co/
+
+스크립트 기능을 직접 구현하지 않고
+
+다른 업체나 / 개발자들이 만든
+
+스크립트의 기능을 가져다가 
+
+사용하는 방법
+
+플러그인 plug-in
+
+1.다운로드 js&css
+
+-슬라이드(swiper)
+-정렬하는 기능(isotope)
+-카카오 지도 서비스
+
+73f1d631f9731a54d5d6b4320b0ab678
+
+http://turnapple123.dothome.co.kr/maptest.html

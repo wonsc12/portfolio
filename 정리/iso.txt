@@ -1,0 +1,17 @@
+https://isotope.metafizzy.co/
+
+11:25
+
+마우스 올렸을때 호버효과 
+98%
+
+
+2시까지
+
+&::after{content: ""; display: inline-block; width: 2px; height: 20px; background-color: #000;
+                            margin: 0 23px; position: relative; top:4px;
+                    
+                    a { color: #000;}
+                    &:last-child::after {
+                        display:none;
+                }
