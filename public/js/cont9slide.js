@@ -8,7 +8,7 @@ const theme4 = document.querySelectorAll(".theme4");
 
  sNumber3 = 0 ;
 
-nextbtnfo.addEventListener("click",function(){
+    nextbtnfo.addEventListener("click",function(){
         if(sNumber3 == theme4.length-1){
             sNumber3 = 0;
         }

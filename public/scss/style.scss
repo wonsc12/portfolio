@@ -154,8 +154,14 @@
             }
             .gnb { display: flex; text-align: center; 
                 > li { line-height: 90px; width: 110px; position: relative;
-                    position: relative;
-                    a { color: #000;}
+                    
+                    .rang { color: #000; position: relative;
+                    &::after {
+                         content: ""; display: inline-block; height: 2px;
+                         background-color: #274abb; position:absolute; left:50% ;transform: translateX(-50%);
+                         width: 0%; transition: all 1s; top:37px; 
+                    }
+                    }
                     .speq {position: absolute; top:34px;}
                     .brand {background-color: #274abb; display: none; 
                           position: absolute; left:-18px; z-index: 5; 
@@ -177,6 +183,7 @@
                         
                         
                     }
+                    &:hover .rang::after { width: 100%;}
                 } 
             }    
         }    
@@ -388,7 +395,7 @@
                             &:hover {color: #274abb;}
                         }
                     }
-                    p { font-size: 15px; color: fuchsia;font-weight: bold; }
+                    p { font-size: 15px; color: orange;font-weight: bold; }
                     
                 }
             }
@@ -474,7 +481,7 @@
             p { padding:23px 0 90px 0;}
         }
         .center9 { width: 1100px; margin: 0 auto ; 
-            .thebox { 
+            .thebox {  
                 position: relative; overflow: hidden;
                 .est {  width:200%; margin-left: 0%; transition: all 0.5s; display: flex; justify-content: space-between;
                     .theme4 {width: 50%; display: flex; justify-content: center;
@@ -486,8 +493,8 @@
                     }    
                 }
             }
-            .fobtn {
-                div{ position:absolute; top:50%; transform: translateY(-50%); width: 60px; 
+            .fobtn { position: relative;
+               > div{ position:absolute; top:50%; transform: translateY(-144%); width: 60px; 
                 height: 100px; background-color: #fff; z-index: 4; display: flex;
                 border-radius: 50px; border: 1px solid #adb5bd;
                 &:hover { background-color: #274abb;}
@@ -616,10 +623,12 @@
 // 게시글 목록페이지
 
 .cont2list   { display: flex; justify-content: center;
-    .brd_center3{ width: 1100px;
+    .brd_center3{ width: 70%; margin: 0 auto;
         .grid {margin:100px 0 30px 0    ; display: flex; justify-content: space-between; align-items: center;  border: 1px solid #adb5bd; height: 60px;
             .brands {  display: flex; align-items: center;
-                i { color: #fff; width: 60px; height: 60px; background-color: #274abb; display: flex; justify-content: center; align-items: center; font-size: 40px; margin-right: 22px;}
+                i { color: #fff; width: 60px; height: 60px; background-color: #274abb; display: flex; justify-content: center; align-items: center; font-size: 40px; margin-right: 22px;
+                   
+                }
             }
             #myFoty { margin-right: 30px;
                 .box4 { width: 85px; height: 38px;border-radius: 4px;border: 1px solid #adb5bd;
@@ -631,23 +640,23 @@
             } 
         }
         .aven {width: 100%; display: flex; flex-wrap: wrap;
-            .line {  width: 350px; margin: 0 8px; position: relative; border: 1px solid #adb5bd; box-sizing: border-box; margin-bottom: 30px;
+            .line { width: 31.333333%; margin: 0 1%; position: relative; border: 1px solid #adb5bd; box-sizing: border-box; margin-bottom: 30px;
                 .ones { width: 25px ; height: 25px; display: flex; justify-content: center; align-items: center; }
                 .wrwd { width: 100%; height: 233px;
                     img { width: 100%; height: 100%;}
                 
-                    .wrtext { position: absolute; left:23px; top:50px ; display: flex; text-align: center; align-items: center; 
-                        p{color: #fff; width: 90px; line-height: 40px; margin: 0 5px; border-radius: 10px;
+                    .wrtext { position: absolute; left:18px; top:44px ; display: flex; text-align: center; align-items: center; 
+                        p{color: #fff; font-size: 10px; width: 70px; line-height: 30px; margin: 0 5px; border-radius: 10px; 
                             &:nth-child(1) { background-color: #274abb;}
                             &:nth-child(2) { background-color: #ff0000;}
                         }
                     }
                 }
-                .wrwd6 { border-top:1px solid #acacac; 
+                .wrwd6 { 
                     .wrwd3 { line-height: 50px; color: #acacac;}
                     .wrwd4 { line-height: 50px; color: #acacac;}
                 }
-                 .wrwd7 { padding-left: 20px;
+                 .wrwd7 { padding-left: 20px; border-bottom: 1px solid #adb5bd; 
                     .wrwd5 { margin-top: 24px;
                         .tiwd { color: #000; font-weight: bold;}
                     }
@@ -1074,8 +1083,63 @@
             .videotext { width: 55%; 
             }
         }
-        .cont3 {  padding: 100px 0;  background-color: #f9f9f8;
-                
+        .cont3 {  padding: 100px 0;  
+            
+            .center { width: 100%; 
+                .listWrap{
+    
+                    
+                    
+                    
+                    .listbox{ width: 22%; margin: 0 1%; text-align:center;margin-bottom:25px;
+                              background-color: #fff;display:none; border: 1px solid #adb5bd;
+                        .image{width:220px;height:180px;  border-radius: 5px;  margin-bottom: 10px;
+                              overflow: hidden; margin: 15px auto;
+                        img { width:100%; height: 100%; transition: all 1s; }
+                        &:hover img{ transform: scale(1.5);}      
+                        }
+                        
+                         
+                        h2{ font-size: 16px;}
+                        p{font-size: 11px;margin:12px; line-height: 30px;}
+                        .more{display:block;width:150px; height: 40px; color:#274abb; 
+                            background-color: #fff; border:none;line-height: 45px;
+                            margin: 0 auto;border:1px solid #acacac; border-radius: 15px;
+                            transition: all 1s; display: flex; align-items: center; justify-content: center;
+                            &:hover { color: #fff; background-color: #274abb;}    
+                        }
+                        
+                        .listBot{border-top: 1px solid #000 ; padding-top: 10px;
+                            display: flex;justify-content:space-between; margin:20px;
+                            .left{display: flex;justify-content: flex-start;   align-items: center;  
+                                span{color:red;}
+                                .stmay { color:#000; line-height: 22px;font-size: 13px;}
+                            }   
+                            
+                            .right {display: flex;justify-content: flex-end; align-items: center;
+                                span{color:red;}
+                                .stmay2 { color:#000; line-height: 22px;font-size: 13px;}
+                            
+                            }      
+                        }   
+                    
+                    &:nth-child(1), 
+                    &:nth-child(2), 
+                    &:nth-child(3), 
+                    &:nth-child(4){ display:block;}
+                    }
+                    
+                    
+                    
+                   > .show{display: block;}     
+                }
+                .btnWrap { text-align: center; margin-top: 50px;
+    
+                    .loadMore {transition: all 1s;  font-weight: bold;  width:150px; height: 50px; color:#274abb; background-color: #fff; border:1px solid #acacac; border-radius: 20px;
+                        &:hover { color: #fff; background-color: #274abb;}
+                    }  
+                }  
+            }
         }
     
         .contfds4 { 
@@ -1430,7 +1494,7 @@
     .cont2list   { width: 100%;
         .brd_center3{ width:95%;
             .grid {margin:100px 0 30px 0    ; display: flex; justify-content: space-between; align-items: center;  border: 1px solid #adb5bd; height: 60px;
-                .brands { width: 30%; 
+                .brands { width: 37%; 
                     h2 { font-size: 12px;}
                     
                 }

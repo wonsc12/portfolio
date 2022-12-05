@@ -34,8 +34,9 @@
 
         // 동그라미 버튼들 클릭시
         for(let j=0; j < circleBtn.length; j++){
-
-            circleBtn[j].addEventListener("click",function(){
+            
+            circleBtn[j].addEventListener("click",(e)=>{
+                e.preventDefault(); 
                 sNumber = j; //클릭한 동그라미 버튼 순번값을 슬라이드 순번값으로 넣어줌
                 silderStart(); //슬라이드 화면 동작함수 호출
 
@@ -105,3 +106,6 @@
             silderView[sNumber].style.zIndex = 3;
             
         }
+
+
+      

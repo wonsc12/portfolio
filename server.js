@@ -10,7 +10,7 @@ const moment = require("moment");
 const momentTimezome = require("moment-timezone");
 
 const app = express();
-const port = process.env.PORT || 6600;
+const port = process.env.PORT || 8080;
 
 app.set("view engine","ejs");
 app.use(express.urlencoded({extended: true}));
@@ -97,7 +97,7 @@ app.get("/search",function(req,res){
         }
       ]
       db.collection("ex14_board").aggregate(test).toArray(function(err,result){
-        res.render("brdlist",{brdData:result,userData:req.user});
+        res.render("brdlist",{inauire:result,userData:req.user});
       });
 });
 
