@@ -15,7 +15,7 @@
         // silder 는 버튼 이랑 동그라미 까지 다 포함되어 있음
         const silderWrap = document.querySelector(".silder");
 
-         //슬라이드 순번값
+         //슬라이드 순번값.
          let sNumber = 0 ;
 
           //이전버튼 클릭시 
